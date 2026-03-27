@@ -1,0 +1,95 @@
+version: "3.9"
+
+services:
+  # ─── Gateway: WebSocket proxy + leader routing ───
+  gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: miniraft-gateway
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./gateway:/app          # bind-mount for hot-reload
+    environment:
+      - SERVICE_NAME=gateway
+      - REPLICA_ADDRESSES=http://replica1:8000,http://replica2:8000,http://replica3:8000
+    depends_on:
+      - replica1
+      - replica2
+      - replica3
+    networks:
+      - raft-net
+
+  # ─── Replica 1 ───
+  replica1:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: miniraft-replica1
+    volumes:
+      - ./replica1:/app         # each replica mounts its OWN folder
+    environment:
+      - REPLICA_ID=1
+      - PEER_ADDRESSES=http://replica2:8000,http://replica3:8000
+      - ELECTION_TIMEOUT_MIN=500
+      - ELECTION_TIMEOUT_MAX=800
+      - HEARTBEAT_INTERVAL=150
+    networks:
+      - raft-net
+
+  # ─── Replica 2 ───
+  replica2:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: miniraft-replica2
+    volumes:
+      - ./replica2:/app
+    environment:
+      - REPLICA_ID=2
+      - PEER_ADDRESSES=http://replica1:8000,http://replica3:8000
+      - ELECTION_TIMEOUT_MIN=500
+      - ELECTION_TIMEOUT_MAX=800
+      - HEARTBEAT_INTERVAL=150
+    networks:
+      - raft-net
+
+  # ─── Replica 3 ───
+  replica3:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: miniraft-replica3
+    volumes:
+      - ./replica3:/app
+    environment:
+      - REPLICA_ID=3
+      - PEER_ADDRESSES=http://replica1:8000,http://replica2:8000
+      - ELECTION_TIMEOUT_MIN=500
+      - ELECTION_TIMEOUT_MAX=800
+      - HEARTBEAT_INTERVAL=150
+    networks:
+      - raft-net
+
+  # ─── Frontend: React + TypeScript (Vite) ───
+  frontend:
+    image: node:20-alpine
+    container_name: miniraft-frontend
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - WATCHPACK_POLLING=true
+      - CHOKIDAR_USEPOLLING=true
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - gateway
+    networks:
+      - raft-net
+
+networks:
+  raft-net:
+    driver: bridge
