@@ -1,0 +1,6 @@
+﻿NAME                IMAGE              COMMAND                  SERVICE    CREATED         STATUS         PORTS
+miniraft-frontend   node:20-alpine     "docker-entrypoint.sΓÇª"   frontend   2 minutes ago   Up 2 minutes   0.0.0.0:5173->5173/tcp, [::]:5173->5173/tcp
+miniraft-gateway    project-gateway    "uvicorn main:app --ΓÇª"   gateway    2 minutes ago   Up 2 minutes   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+miniraft-replica1   project-replica1   "uvicorn main:app --ΓÇª"   replica1   2 minutes ago   Up 2 minutes   
+miniraft-replica2   project-replica2   "uvicorn main:app --ΓÇª"   replica2   2 minutes ago   Up 2 minutes   
+miniraft-replica3   project-replica3   "uvicorn main:app --ΓÇª"   replica3   2 minutes ago   Up 2 minutes   

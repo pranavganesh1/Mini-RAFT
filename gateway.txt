@@ -1,0 +1,154 @@
+﻿miniraft-gateway  | INFO:     Will watch for changes in these directories: ['/app']
+miniraft-gateway  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+miniraft-gateway  | INFO:     Started reloader process [1] using WatchFiles
+miniraft-gateway  | INFO:     Started server process [8]
+miniraft-gateway  | INFO:     Waiting for application startup.
+miniraft-gateway  | INFO:     Application startup complete.
+miniraft-gateway  | 2026-04-01 05:56:37,281 [GATEWAY] Leader changed to replica3 (http://replica3:8000)
+miniraft-gateway  | INFO:     172.18.0.2:54608 - "POST /notify-leader-change HTTP/1.1" 200 OK
+miniraft-gateway  | 2026-04-01 05:56:38,151 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:38,152 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:40,178 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:40,179 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:42,193 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:42,193 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:44,209 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:44,210 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:46,235 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:46,236 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:48,257 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:48,257 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:50,272 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:50,273 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:52,295 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:52,296 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:54,357 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:54,359 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:56,404 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:56,407 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:56:58,448 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:56:58,450 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:00,478 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:00,479 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:02,505 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:02,506 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:04,532 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:04,533 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:06,561 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:06,562 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:08,586 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:08,587 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:10,613 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:10,614 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:12,640 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:12,641 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:14,681 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:14,681 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:16,698 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:16,699 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:18,720 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:18,721 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:20,741 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:20,742 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:22,761 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:22,762 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:24,789 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:24,790 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:26,820 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:26,822 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:28,847 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:28,848 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:30,865 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:30,865 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:32,891 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:32,892 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:34,916 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:34,917 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:36,956 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:36,957 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:38,974 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:38,975 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:40,999 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:41,000 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:43,018 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:43,019 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:45,049 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:45,050 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:47,081 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:47,083 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:49,112 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:49,113 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:51,134 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:51,135 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:53,157 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:53,158 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:55,200 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:55,201 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:57,223 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:57,224 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:57:59,270 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:57:59,270 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:01,308 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:01,309 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:03,345 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:03,346 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:05,391 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:05,393 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:07,431 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:07,432 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:09,465 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:09,466 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:11,503 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:11,504 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:13,529 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:13,530 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:15,551 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:15,552 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:17,569 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:17,570 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:19,594 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:19,595 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:21,661 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:21,662 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:23,687 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:23,688 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:25,712 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:25,713 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:27,726 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:27,727 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:29,754 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:29,755 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:31,777 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:31,778 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:33,797 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:33,798 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:35,826 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:35,827 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:37,845 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:37,845 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:39,868 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:39,869 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:41,895 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:41,896 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:43,934 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:43,936 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:45,951 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:45,951 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:47,974 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:47,975 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:49,992 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:49,993 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:52,020 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:52,021 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:54,051 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:54,052 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:56,066 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:56,067 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:58:58,093 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:58:58,093 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:59:00,110 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:59:00,110 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:59:02,141 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:59:02,142 [GATEWAY] Leader from follower hint: http://replica3:8000
+miniraft-gateway  | 2026-04-01 05:59:04,174 [GATEWAY] HTTP Request: GET http://replica1:8000/status "HTTP/1.1 200 OK"
+miniraft-gateway  | 2026-04-01 05:59:04,175 [GATEWAY] Leader from follower hint: http://replica3:8000
