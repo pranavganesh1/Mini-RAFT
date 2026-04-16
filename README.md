@@ -32,21 +32,29 @@ Even if the "Active Leader" server crashes, the remaining servers will automatic
 ---
 
 ## 🌐 Connecting from Other Systems (Friends)
+Step 1 — Find your IP address
+Open Command Prompt and run:
+ipconfig
+Look for "IPv4 Address" under your active network adapter (Wi-Fi). It'll look like 192.168.1.15.
 
-Your friends can join the same drawing board if they are on the **same Wi-Fi or local network**!
+Step 2 — Check your firewall
+You need to allow inbound connections on ports 5173 and 8000. On Windows:
 
-1.  **Find your Local IP**:
-    - **Windows**: Run `ipconfig` (look for "IPv4 Address", e.g., `192.168.1.15`).
-    - **Mac/Linux**: Run `ifconfig` or `ip addr`.
-2.  **Ensure your Firewall allows traffic**:
-    Make sure your system isn't blocking incoming connections on ports **5173** (UI) and **8000** (Gateway).
-3.  **Have your Friend Connect**:
-    Your friend just needs to enter your IP in their browser:
-    ```text
-    http://<YOUR_IP_HERE>:5173
-    ```
-4.  **How it syncs**: 
-    The browser code is smart! It automatically talks back to your machine at `http://<YOUR_IP_HERE>:8000` for the WebSockets, so their strokes will appear on your canvas in real-time.
+Open Windows Defender Firewall → Advanced Settings
+Click Inbound Rules → New Rule
+Choose Port → TCP → enter 5173, 8000
+Allow the connection, apply to all profiles, give it a name and save
+Repeat if needed for both ports (or enter them comma-separated in one rule)
+
+
+Step 3 — Start your app
+Make sure both your UI (port 5173) and backend gateway (port 8000) are running on your machine.
+
+Step 4 — Friend connects
+Your friend, on the same Wi-Fi, opens their browser and goes to:
+http://192.168.1.15:5173
+(replacing with your actual IP)
+That's it — the app will automatically route their WebSocket traffic back to your machine on port 8000, so strokes sync in real time.
 
 ---
 
