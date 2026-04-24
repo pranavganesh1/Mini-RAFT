@@ -35,7 +35,7 @@ Even if the "Active Leader" server crashes, the remaining servers will automatic
 Step 1 — Find your IP address
 Open Command Prompt and run:
 ipconfig
-Look for "IPv4 Address" under your active network adapter (Wi-Fi). It'll look like 192.168.1.15.
+Look for "IPv4 Address" under your active network adapter (Wi-Fi). It'll look like 192.168.1.15.You can connect multiple devices under same network and test!
 
 Step 2 — Check your firewall
 You need to allow inbound connections on ports 5173 and 8000. On Windows:
